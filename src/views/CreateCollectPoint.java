@@ -60,7 +60,7 @@ public class CreateCollectPoint extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         localName = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        localPhone = new javax.swing.JTextField();
+        localCity = new javax.swing.JTextField();
         localTypeOfWaste = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -93,7 +93,7 @@ public class CreateCollectPoint extends javax.swing.JFrame {
         jLabel4.setText("E-mail");
 
         jLabel5.setFont(new java.awt.Font("Fira Sans", 1, 14)); // NOI18N
-        jLabel5.setText("Telefone");
+        jLabel5.setText("Cidade");
 
         localTypeOfWaste.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lâmpadas", "Pilhas e Baterias", "Papéis e Papelão", "Resíduos Eletrônicos", "Resíduos Orgânicos", "Óleo de Cozinha" }));
 
@@ -142,7 +142,7 @@ public class CreateCollectPoint extends javax.swing.JFrame {
                                 .addComponent(localEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(16, 16, 16)
                             .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(localPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(localCity, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel5)))
                         .addComponent(localName)
                         .addComponent(localTypeOfWaste, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -165,7 +165,7 @@ public class CreateCollectPoint extends javax.swing.JFrame {
                     .addGroup(mainPanelLayout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(localPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(localCity, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -223,7 +223,7 @@ public class CreateCollectPoint extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String name = this.localName.getText();
         String email = this.localEmail.getText();
-        String phone = this.localPhone.getText();
+        String phone = this.localCity.getText();
         String typeOfWaste = (String) this.localTypeOfWaste.getSelectedItem();
         Double latitute = this.geoPositionSelected.getLatitude();
         Double longitude = this.geoPositionSelected.getLongitude();
@@ -240,9 +240,9 @@ public class CreateCollectPoint extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JTextField localCity;
     private javax.swing.JTextField localEmail;
     private javax.swing.JTextField localName;
-    private javax.swing.JTextField localPhone;
     private javax.swing.JComboBox<String> localTypeOfWaste;
     private javax.swing.JLabel logo;
     private javax.swing.JPanel mainPanel;

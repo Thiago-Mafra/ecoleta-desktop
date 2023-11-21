@@ -118,7 +118,7 @@
                               </Group>
                               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="localPhone" min="-2" pref="274" max="-2" attributes="0"/>
+                                  <Component id="localCity" min="-2" pref="274" max="-2" attributes="0"/>
                                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -148,7 +148,7 @@
                       <Group type="102" attributes="0">
                           <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="localPhone" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="localCity" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -192,10 +192,10 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Fira Sans" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Telefone"/>
+            <Property name="text" type="java.lang.String" value="Cidade"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="localPhone">
+        <Component class="javax.swing.JTextField" name="localCity">
         </Component>
         <Component class="javax.swing.JComboBox" name="localTypeOfWaste">
           <Properties>
