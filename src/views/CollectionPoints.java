@@ -21,10 +21,8 @@ public class CollectionPoints extends javax.swing.JFrame {
     }
 
     private void loadCollectionPointsOfCity() {
-        ArrayList<CollectPoint> points = new ArrayList<>(); // REMOVER O NEW ARRAYLIST<>() E SUBSTITUIR PELA CHAMADA NO BANCO
-        points.add(new CollectPoint(-27.237536666590675, -48.62617492675781)); // REMOVER
-        points.add(new CollectPoint(-26.237536666590675, -48.62617492675781)); // REMOVER
-        points.add(new CollectPoint(-28.237536666590675, -48.62617492675781)); // REMOVER
+        ArrayList<CollectPoint> points = new ArrayList<>();
+
         drawMap(points);
     }
 
